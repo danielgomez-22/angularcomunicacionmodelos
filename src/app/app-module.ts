@@ -2,18 +2,27 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { ListaProductosComponent } from './components/lista-productos-component/lista-productos-component';
+import { HomeComponent } from './components/home-component/home-component';
+import { MenuComponents } from './components/menu-components/menu-components';
+import { PadreCochesComponent } from './components/padre-coches-component/padre-coches-component';
+import { HijoCochesComponent } from './components/hijo-coches-component/hijo-coches-component';
+import { PadreDeportesComponent } from './components/padre-deportes-component/padre-deportes-component';
+import { DeporteComponent } from './components/deporte-component/deporte-component';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    ListaProductosComponent,
+    HomeComponent,
+    MenuComponents,
+    PadreCochesComponent,
+    HijoCochesComponent,
+    PadreDeportesComponent,
+    DeporteComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
