@@ -8,6 +8,8 @@ import Coche from '../../models/coche';
 })
 export class HijoCochesComponent {
 @Input() car!: Coche;
+@Input() marca!: string;
+@Input() modelo!: string;
 
 constructor() {
   //this.car = new Coche ('Pontiac', 'Firebird', 0, 25);
