@@ -1,0 +1,8 @@
+<p>comic-simple-component works!</p>
+<h1> Comic Simple</h1>
+<button (click)="cargarComics()">Cargar Comic</button>
+@for(comic of arrayComics; track comic) {
+    <h2>{{comic.titulo}}</h2>
+    <img src="{{comic.imagen}}" alt="{{comic.titulo}}">
+    <p>{{comic.descripcion}}</p>
+}
